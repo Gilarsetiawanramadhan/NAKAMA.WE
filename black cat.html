@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"/>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous">
+    </script>
+    <!--batas bootstrap-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!--font kedua-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!--batas font-->
+    <!--icon bootstrap-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <!--batas icon bootstrap-->
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0;
+            background-color: #41464b;
+        }
+        .judul{
+            font-family: 'Righteous', cursive;
+            font-weight: 700; 
+            color: tomato;
+            text-shadow: 2px 2px 1px black;
+        }
+        .topik{
+            color: aliceblue;
+            font-size: 20px; 
+            font-family: 'Fredoka One', cursive;
+            transition: 0,5s;
+        }
+        .main{
+            background-color: rgb(95, 104, 114);
+            height: auto;
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+            border-bottom: 10px solid white;
+        }
+        .ratting{
+            background-color: darkcyan;
+            margin-top: 20px;
+            border: 2px solid yellowgreen;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: cadetblue; border-bottom: 4px solid;">
+        <div class="container-fluid">
+            <span class="judul navbar-brand" 
+                href="#" style="font-size: 30px;">
+                    NAKAMA
+            </span>
+            <button class="navbar-toggler" 
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: azure;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="list nav-item">
+                        <a class=" nav-link active" 
+                            aria-current="page" href="index.html" style="color: aliceblue; font-size: 20px; font-family: 'Fredoka One', cursive; transition: 0,5s;">
+                                Home
+                        </a>
+                    </li>
+                    <li class="list nav-item">
+                        <a class="nav-link topik" href="populer.html" 
+                        >
+                                Populer
+                        </a>
+                    </li>
+                    <li class="list nav-item">
+                        <a class="nav-link topik" href="rekomendasi.html">
+                            Rekomendasi
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rekomendasi.html" style="color: aliceblue;font-size: 20px; font-family: 'Fredoka One', cursive;">
+                            Contak Us
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#genreAnime" style="margin-right: 26px;">G</button>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--batas navbar-->
+    <nav aria-label="breadcrumb" style="padding-left: 10px;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color: aliceblue;">Populer</a></li>
+            <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color: aliceblue;">Black Cat</a></li>
+            <li class="breadcrumb-item active" aria-current="page" style="color: aliceblue;">episod-1</li>
+        </ol>
+    </nav>
+    <!--batas Breadcrumb-->
+    <div class="main container-sm">
+        <div class="content"
+        style="display: flex; justify-content:space-around;">
+            <iframe width="960" height="315" src="https://www.youtube.com/embed/dCLCmU_sVoo" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination" 
+                style="display: flex; justify-content: end; padding:10px">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+        <div class="container text-center-sm">
+            <div class="row" style="text-transform: capitalize;">
+                <div class="col">
+                    <img src="gambar/black cat01.jpeg"
+                    class="img-thumbnail"
+                    style="margin: 20px; width: 30vw; border: 2px solid lightgray;"
+                    alt="black Cover">
+                </div>
+                <div class="col-md" 
+                    style=" margin-top: 20px; color: darkgrey;">
+                    <h3 style="padding-left: 20px;">Black Cat</h3>
+                    <div class="list-group list-group-horizontal-md">
+                        <ul style="list-style-type:disc;">
+                            <li>Genre:fantasi,komedi,petualangan,super power.</li>
+                            <li>rilis : agustus 25,2012</li>
+                            <li>durasi : 23 menit</li>
+                            <li>studio : toei animation</li>
+                            <li>diipdate : januari 23,2022</li>
+                        </ul>
+                        <ul style="list-style-type:disc;">
+                            <li>status : selesai</li>
+                            <li>jenis : special</li>
+                            <li>pengarang: eiichiro oda</li>
+                            <li>diposting:NAKAMA</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ratting">
+                        <h4>rating 7,17</h4>
+                        <i class="bi bi-star-fill" style="color: gold;"></i>
+                        <i class="bi bi-star-fill" style="color: gold;"></i>
+                        <i class="bi bi-star-fill" style="color: gold;"></i>
+                        <i class="bi bi-star-fill" style="color: gold;"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="background-color: currentColor; border: 2px solid saddlebrown;">
+                <p style="color: darkgray; text-align: justify; padding: 10px;">
+                    Gol D. Roger dikenal sebagai “Raja Bajak Laut,” makhluk terkuat dan paling terkenal yang pernah berlayar di Grand Line. 
+                    Penangkapan dan eksekusi Roger oleh Pemerintah Dunia membawa perubahan di seluruh dunia. Kata-kata terakhirnya sebelum 
+                    kematiannya mengungkapkan keberadaan harta terbesar di dunia, One Piece. Pengungkapan inilah yang menghasilkan Grand Age 
+                    of Pirates, orang-orang yang bermimpi menemukan One Piece — yang menjanjikan kekayaan dan ketenaran dalam jumlah tak terbatas 
+                    dan sangat mungkin puncak kemuliaan serta gelar Raja Bajak Laut.Enter Monkey D. Luffy, bocah berusia 17 tahun yang menentang 
+                    definisi standar Anda tentang bajak laut. Alih-alih persona populer dari desa bajak laut yang jahat, keras, dan tak bergigi 
+                    untuk bersenang-senang, alasan Luffy untuk menjadi bajak laut adalah salah satu keajaiban: pikiran tentang petualangan yang 
+                    mengasyikkan yang membawanya ke orang-orang yang membangkitkan minat dan akhirnya, harta yang dijanjikan. Mengikuti jejak 
+                    pahlawan masa kecilnya, Luffy dan krunya melakukan perjalanan melintasi Grand Line, mengalami petualangan gila, mengungkap 
+                    misteri gelap dan melawan musuh yang kuat, semua untuk mencapai kekayaan yang paling didambakan dari semua kekayaan — One Piece. 
+                    [Ditulis oleh Animasu Menulis kembali]
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--modal strat-->
+    <div class="modal" id="genreAnime" 
+            tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <select class="form-select" size="5" aria-label="size 5 select example">
+                        <option selected style="color: tomato;">Genre</option>
+                        <option value="1"><a href="#">action</a></option>
+                        <option value="1"><a href="#">adventure</a></option>
+                        <option value="1"><a href="#">avant garde</a></option>
+                        <option value="1"><a href="#">boys love</a></option>
+                        <option value="1"><a href="#">comedy</a></option>
+                        <option value="1"><a href="#">drama</a></option>
+                        <option value="1"><a href="#">fantasy</a></option>
+                        <option value="1"><a href="#">horor</a></option>
+                        <option value="1"><a href="#">sci-fi</a></option>
+                        <option value="1"><a href="#">slice of live</a></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--batas modal-->
+</body>
+</html>
